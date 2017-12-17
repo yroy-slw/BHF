@@ -1,0 +1,691 @@
+@import reset
+@import swiper
+
+@font-face 
+	font-family: 'Conv_Stanley-Regular'
+	src: url('../fonts/Stanley-Regular.eot')
+	src: local('☺'), url('../fonts/Stanley-Regular.woff') format('woff'), url('../fonts/Stanley-Regular.ttf') format('truetype'), url('../fonts/Stanley-Regular.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'Conv_Stanley-Bold'
+	src: url('../fonts/Stanley-Bold.eot')
+	src: local('☺'), url('../fonts/Stanley-Bold.woff') format('woff'), url('../fonts/Stanley-Bold.ttf') format('truetype'), url('../fonts/Stanley-Bold.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'Conv_swz721l'
+	src: url('../fonts/swz721l.eot')
+	src: local('☺'), url('../fonts/swz721l.woff') format('woff'), url('../fonts/swz721l.ttf') format('truetype'), url('../fonts/swz721l.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'Conv_swz721b'
+	src: url('../fonts/swz721b.eot')
+	src: local('☺'), url('../fonts/swz721b.woff') format('woff'), url('../fonts/swz721b.ttf') format('truetype'), url('../fonts/swz721b.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'Conv_Swis721_BT_Italic'
+	src: url('../fonts/Swis721_BT_Italic.eot')
+	src: local('☺'), url('../fonts/Swis721_BT_Italic.woff') format('woff'), url('../fonts/Swis721_BT_Italic.ttf') format('truetype'), url('../fonts/Swis721_BT_Italic.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+
+*,
+*:after,
+*:before
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+$full: 100%
+$size: 1000px
+$text: 17px
+$line: 22px
+
+$grey: #C5C8CC
+$blue: #1F4E91
+
+$break-desk: 1200px
+$break-tablet: 1024px
+$break-tablet-port: 768px
+$break-phone: 640px
+$break-min-phone: 500px
+
+.onec
+  background-color: #34ADFF
+  background-image: -webkit-linear-gradient(150deg, #eae8e7 45%, #3e4679 45%)
+  min-height: 60px
+  height: 60px
+  display: flex
+  align-items: center
+  .inner-three 
+  	width: $full
+  	max-width: 900px
+  	margin: 0px auto
+  	text-align: center
+  	padding-left: 15%
+  	transition: all .5s ease
+  	h1 
+  		background: #ffffff
+  		color: $blue
+  		display: inline-block
+  		height: 60px
+  		line-height: 60px
+  		padding: 0px 20px
+  		position: relative
+  		text-transform: uppercase
+  		font-size: 37px
+  		font-family: 'Conv_Swis721_BT_Italic'
+  		@media screen and (max-width: $break-tablet-port)
+  			font-size: 20px
+  		@media screen and (max-width: $break-phone)
+  			font-size: 15px
+  			padding: 0px
+  		&:before
+  			content: ""
+  			width: 60px
+  			height: 60px
+  			border-bottom: solid 30px rgb(255,255,255)
+  			border-right: solid 30px rgb(255,255,255)
+  			border-left: solid 30px transparent
+  			border-top: solid 30px transparent
+  			position: absolute
+  			left: -60px
+  		&:after
+  			content: ""
+  			width: 60px
+  			height: 60px
+  			border-bottom: solid 30px transparent
+  			border-right: solid 30px transparent
+  			border-left: solid 30px rgb(255,255,255)
+  			border-top: solid 30px rgb(255,255,255)
+  			position: absolute
+  			right: -60px
+
+.expand
+	padding-left: 0 !important
+
+
+.twoc
+
+	background: red
+	height: 60px
+	background-image: -webkit-linear-gradient(140deg, #3e4679 45%, #eae8e7 45%)
+
+	.inner-three
+	  	text-align: left
+	  	max-width: 900px
+	  	width: 100%
+	  	margin: 0px auto
+	  	text-align: center
+	  	padding-right: 30%
+	  	transition: all .5s ease
+	  	h1
+	  		background: #ffffff
+	  		color: $blue
+	  		display: inline-block
+	  		height: 60px
+	  		line-height: 60px
+	  		padding: 0px 20px
+	  		position: relative
+	  		text-transform: uppercase
+	  		font-size: 37px
+	  		font-family: 'Conv_Swis721_BT_Italic'
+	  		@media screen and (max-width: $break-tablet-port)
+	  			font-size: 20px
+	  		@media screen and (max-width: $break-phone)
+	  			font-size: 15px
+	  			padding: 0px
+	  		&:before
+	  			content: ""
+	  			width: 60px
+	  			height: 60px
+	  			border-bottom: solid 30px rgb(255,255,255)
+	  			border-right: solid 30px rgb(255,255,255)
+	  			border-left: solid 30px transparent
+	  			border-top: solid 30px transparent
+	  			position: absolute
+	  			left: -60px
+	  		&:after
+	  			content: ""
+	  			width: 60px
+	  			height: 60px
+	  			border-bottom: solid 30px transparent
+	  			border-right: solid 30px transparent
+	  			border-left: solid 30px rgb(255,255,255)
+	  			border-top: solid 30px rgb(255,255,255)
+	  			position: absolute
+	  			right: -60px
+
+
+.expando 
+	padding-right: 0 !important
+
+
+  		
+
+.two
+  background-color: #34ADFF
+  background-image: -webkit-linear-gradient(150deg, #3e4679 45%, #eae8e7 45%)
+  min-height: 60px
+  height: 60px
+  @media screen and (max-width: $break-tablet-port)
+  	background-image: -webkit-linear-gradient(150deg, #3e4679 25%, #eae8e7 25%)
+  @media screen and (max-width: $break-phone)
+  	height: 40px
+  	min-height: 40px
+
+.current-lang
+	a 
+		text-decoration: underline
+
+.three
+  background-color: #34ADFF
+  background-image: -webkit-linear-gradient(150deg, #ffffff 67%, #3e4679 67%)
+  min-height: 60px
+  height: 60px
+  display: flex
+  align-items: center
+  padding-left: 15px
+  @media screen and (max-width: $break-tablet-port)
+  	background-image: -webkit-linear-gradient(150deg, #ffffff 40%, #3e4679 40%)
+  @media screen and (max-width: $break-phone)
+  	padding-left: 30px
+  	height: 40px
+  	min-height: 40px
+  width: $full
+  .inner-three 
+  	max-width: $size
+  	width: $full
+  	margin: 0px auto
+  	h1 
+  		color: white
+  		font-family: 'Conv_Stanley-Bold'
+  		text-transform: uppercase
+  		@media screen and (max-width: $break-phone)
+  			font-size: 20px
+  		@media screen and (max-width: $break-min-phone)
+  			font-size: 15px
+
+
+h1 
+	font-size: 23px
+	line-height: 27px
+	color: $blue
+
+a 
+	color: $blue
+	text-decoration: none
+
+.fullScreen
+	width: $full
+	height: $full
+
+.flexJustify
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+
+#menu-phone 
+	width: 38px
+	height: 38px
+	position: absolute 
+	top: 21px
+	right: 22px
+	z-index: 1001
+	font-size: 38px
+	color: $blue
+	cursor: pointer
+	display: none
+	@media screen and (max-width: $break-phone)
+		display: block
+
+.show-phone-menu
+	max-height: 50em !important
+	padding-bottom: 30px !important
+	padding-top: 20px !important
+	border-bottom: 2px solid $blue !important
+
+body, html 
+	width: $full
+	height: 100vh
+	color: $blue
+	font-size: $text
+	line-height: $line
+	font-family: 'Conv_swz721l'
+	font-weight: lighter
+	main
+		width: $full
+		height: $full
+		display: flex
+		flex-direction: column
+		header 
+			width: $full
+			padding: 15px
+			background: white
+			padding-bottom: 10px
+			@media screen and (max-width: $break-phone)
+				padding-left: 30px
+			.inner
+				@extend .flexJustify
+				align-items: baseline
+				max-width: $size
+				width: 100%
+				margin: 0px auto
+				.flex-logo 
+					display: flex
+					img 
+						width: 140px
+						height: 39px
+						margin-right: 50px
+					nav 
+						padding-top: 20px
+						@media screen and (max-width: $break-phone)
+							position: absolute
+							top: 69px;
+							left: 0
+							background: white
+							width: 100%
+							z-index: 1000
+							padding-bottom: 0px
+							padding-top: 0px
+							max-height: 0em
+							height: auto
+							overflow: hidden
+							transition: all .7s ease
+						ul 
+							display: flex
+							flex-wrap: wrap
+							@media screen and (max-width: $break-phone)
+								flex-direction: column
+								align-items: flex-end
+								padding-top: 20px
+							li 
+								a 
+									padding-right: 15px
+									font-family: 'Conv_Stanley-Bold'
+									font-size: 13px
+									&:hover 
+										text-decoration: underline
+									@media screen and (max-width: $break-phone)
+										padding-right: 30px
+										text-transform: uppercase
+										font-size: 25px
+										padding-bottom: 35px
+										display: inline-block
+				.switch
+					align-self: flex-end
+					@media screen and (max-width: $break-phone)
+						display: none
+					ul
+						display: flex
+						li 
+							a 
+								padding-left: 5px
+								font-family: 'Conv_Stanley-Bold'
+								font-size: 13px
+
+
+.switch-mobile 
+	display: none
+	@media screen and (max-width: $break-phone)
+		display: block
+	ul 
+		display: flex !important
+		flex-direction: row !important
+		justify-content: flex-end
+		padding-right: 30px
+		padding-top: 0px !important
+		padding-bottom: 40px
+		li 
+			a 
+				font-size: 15px !important
+				padding: 0px !important
+
+
+
+
+.intro 
+	width: $full
+	position: relative
+	article 
+		img 	
+			width: $full
+
+.swiper-container
+
+.swiper-pagination 
+	bottom: 30px !important
+
+.swiper-pagination-bullet-active
+	background: $blue !important
+
+
+
+.message 
+	max-width: $size
+	width: 100%
+	margin: 0px auto
+	text-align: center
+	padding: 20px
+	margin-top: 10px
+	position: relative
+	h1 
+		font-size: 25px
+		line-height: 29px
+		font-family: 'Conv_Stanley-Bold'
+		font-weight: lighter
+		@media screen and (max-width: $break-tablet-port)
+			font-size: 18px
+			line-height: 22px
+
+.home 
+	max-width: $size
+	width: $full
+	margin: 0px auto
+	margin-top: 30px
+	padding-bottom: 40px
+	@extend .flexJustify
+	@media screen and (max-width: $break-tablet-port)
+		padding-bottom: 0px
+	article.news 
+		@media screen and (max-width: $break-tablet-port)
+			background: #eae8e7
+			padding-top: 30px
+			margin-top: 30px
+			padding-bottom: 30px
+	article 
+		width: 50%
+		border-right: 1px solid $blue
+		padding: 0px 10px
+		@media screen and (max-width: $break-tablet-port)
+			width: $full
+			padding-left: 30px
+			padding-right: 30px
+		&:last-child 
+			border: none
+		.title 
+			h2
+				font-size: 32px
+				line-height: 34px
+				text-transform: uppercase
+				text-align: center
+				border-bottom: 1px solid $blue
+				padding-bottom: 10px
+				font-family: 'Conv_Stanley-Bold'
+				font-weight: lighter
+		.content-home 
+			width: $full
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			width: 100%
+			padding: 0px 40px
+			padding-top: 30px
+			position: relative
+			@media screen and (max-width: $break-tablet-port)
+				padding-left: 0px
+				padding-right: 0px
+			ul	
+				list-style-type: disc
+				@media screen and (max-width: $break-tablet)
+					width: $full
+				@media screen and (max-width: $break-tablet-port)
+					padding-left: 15px
+				li 
+					line-height: 22px
+
+		.more 
+			width: $full 
+			text-align: center
+			font-size: 14px
+			@media screen and (max-width: $break-tablet)
+				text-align: right 
+				padding-right: 30px
+			a 
+				background: $blue
+				color: white
+				display: inline-block
+				padding: 6px 12px
+				margin-top: 30px
+				border-radius: 10px
+				border: 1px solid $blue
+				&:hover 
+					background: #eae8e7
+					color: $blue
+					border: 1px solid $blue
+		
+
+.content-news 
+	width: $full
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	width: 100%
+	padding: 0px 40px
+	padding-top: 30px
+	position: relative
+	@media screen and (max-width: $break-tablet-port)
+		padding-left: 0px
+		padding-right: 0px
+		padding-top: 12px
+	div
+		width: 50%
+		border-right: 1px solid $blue
+		padding-right: 20px
+		background: url(../images/arrow-left.svg)
+		background-size: 18px
+		background-repeat: no-repeat
+		background-position: 95% 50%
+		@media screen and (max-width: $break-tablet)
+			width: $full
+			border-right: 0px
+			border-bottom: 1px solid $blue
+			padding-right: 0px
+			padding-bottom: 10px
+		&:last-child
+			border: none
+			padding-right: 0px
+			padding-left: 20px
+			@media screen and (max-width: $break-tablet)
+				border-bottom: 0px
+				padding-left: 0px
+				padding-top: 10px
+				padding-bottom: 0px
+		span 
+			font-size: 13px
+			font-family: 'Conv_swz721b'
+		a 
+			padding-right: 10px
+			display: block
+
+
+.cont 
+	flex: 1;
+
+footer 
+	border-top: 1px solid $blue
+	width: $full
+	text-align: center
+	font-size: 14px
+	padding: 25px
+	align-self: flex-end
+	@media screen and (max-width: $break-phone)
+		text-align: left
+	a 
+		text-decoration: underline
+	 
+
+				
+.page 
+	max-width: $size
+	width: $full
+	margin: 0px auto
+	margin-top: -28px
+	@extend .flexJustify
+	justify-content: flex-start
+	padding-bottom: 40px
+	position: relative
+	@media screen and (max-width: $break-tablet)
+		margin-top: 30px
+	.left-page 
+		width: 32%
+		@media screen and (max-width: $break-tablet)
+			display: none
+	.right-page 
+		width: 48%
+		@media screen and (max-width: $break-tablet)
+			width: 80%
+			margin: 0px auto
+		@media screen and (max-width: $break-phone)
+			width: 100%
+			padding-left: 30px
+			padding-right: 30px
+		p 
+			color: #000
+			font-size: 14px
+			line-height: 17px
+		ul 
+			color: #000
+			list-style-type: disc
+			padding-left: 15px
+			font-size: 14px
+			line-height: 17px
+
+
+
+
+.wpcf7-form
+	p 
+		color: $blue !important
+		font-family: 'Conv_swz721b'
+		margin-bottom: 5px
+	input 
+		background: #eae8e7
+		border: none
+		padding: 5px
+		margin-bottom: 10px
+		width: $full
+		&[type="submit"]
+			background: $blue
+			color: white
+			border-radius: 10px
+			width: auto
+			padding-left: 30px
+			padding-right: 30px
+			float: right
+	textarea 
+		background: #eae8e7
+		border: none
+		padding: 5px
+		margin-bottom: 10px
+		width: $full
+	.min-text 
+		font-family: 'Conv_swz721l' !important
+		font-size: 12px
+
+
+
+.elem 
+	width: $full
+	border-top: 1px solid $blue
+	.top 
+		padding-top: 10px
+		padding-bottom: 15px
+		cursor: pointer
+		position: relative
+		h2 
+			color: $blue
+			font-family: 'Conv_swz721b'
+			font-size: 20px
+			line-height: 24px
+			padding-bottom: 10px
+		h3 
+			font-size: 14px
+			line-height: 17px
+	.down 
+		padding: 10px 0px
+		
+		display: none
+		ul 	
+			color: #888
+			line-height: 20px
+			padding-top: 0px
+.open 
+	max-height: 50em !important
+
+
+.chev 
+	position: absolute
+	top: 10px
+	right: 20px
+	transition: all .5s ease
+
+.rote 
+	 transform: rotate(180deg) !important
+
+.current_page_item, .current-menu-item
+	a 
+		text-decoration: underline
+
+.elem-news 
+	border-top: 1px solid $blue
+	padding: 10px 0px
+	position: relative
+	&:last-child 
+		border-bottom: 1px solid $blue
+	h2 
+		font-size: 18px
+	h3 
+		font-family: 'Conv_swz721b'
+		font-size: 14px
+	.chev-news 
+		position: absolute
+		top: 50%
+		right: 20px
+		font-size: 20px
+		margin-top: -10px
+
+.single 
+	border-top: 1px solid $blue
+	padding: 10px 0px
+	position: relative
+	h2 
+		font-size: 18px
+	h3 
+		font-family: 'Conv_swz721b'
+		font-size: 14px
+	.chev-news 
+		position: absolute
+		top: 20px
+		right: 20px
+		font-size: 20px
+		margin-top: -10px
+	.content-single 
+		padding-top: 30px
+
+
+
+.swiper-pagination
+    bottom: 20px !important
+
+.swiper-pagination-bullet 
+    width: 12px !important
+    height: 12px !important
+
+.swiper-pagination-bullet 
+	border: 1px solid $blue !important
+	background: white !important
+	opacity: 1 !important
+
+.swiper-pagination-bullet-active
+	border: 1px solid white !important
+	background: $blue !important
+	opacity: 1 !important
